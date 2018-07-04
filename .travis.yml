@@ -4,4 +4,4 @@ install:
   - nuget restore Evos.sln
 script:
   - xbuild /p:Configuration=Release Evos.sln
-  - mono ./packages/NUnit.ConsoleRunner.3.8.0/tools/nunit3-console.exe ./Sequence.Tests/bin/Debug/Sequence.Tests.dll
+  - mono ./packages/NUnit.ConsoleRunner.3.8.0/tools/nunit3-console.exe ./Sequence.Tests/bin/Release/Sequence.Tests.dll
