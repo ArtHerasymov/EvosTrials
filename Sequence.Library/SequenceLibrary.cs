@@ -76,7 +76,7 @@ namespace Sequence.Library
 
         /// <summary>Calculates a single term from the sequence.
         /// <param name="n">Used to specify the index of the term for extraction from the sequence.</param>
-        static int CalculateNthTerm(int n)
+        private static int CalculateNthTerm(int n)
         {
             if (n < 4) return 1;
             int[,] operatorMatrix = { { 1, 1, 1 }, { 1, 0, 0 },

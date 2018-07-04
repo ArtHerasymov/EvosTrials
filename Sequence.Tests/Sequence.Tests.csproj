@@ -6,11 +6,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F343C25A-7FEC-4D7E-83C6-631E9E799841}</ProjectGuid>
+    <ProjectGuid>{54210E94-E497-4ED8-97A1-083662BE6A33}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sequence.Library</RootNamespace>
-    <AssemblyName>Sequence.Library</AssemblyName>
+    <RootNamespace>Sequence.Tests</RootNamespace>
+    <AssemblyName>Sequence.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <NuGetPackageImportStamp>
@@ -47,11 +47,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SequenceLibrary.cs" />
+    <Compile Include="SequenceLibraryTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sequence.Library\Sequence.Library.csproj">
+      <Project>{f343c25a-7fec-4d7e-83c6-631e9e799841}</Project>
+      <Name>Sequence.Library</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
