@@ -1,7 +1,6 @@
 language: csharp
 solution: "./Evos.sln"
-install:
-- travis_retry nuget restore -source "https://www.nuget.org/api/v2" ./Evos.sln
-script:
-- xbuild ./Evos.sln
-- mono ./Sequence.LibraryTests/bin/Debug/Sequence.LibraryTests.dll
+mono:
+  - latest
+  - 3.12.0
+  - 3.10.0
