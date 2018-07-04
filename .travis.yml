@@ -4,4 +4,4 @@ install:
 - travis_retry nuget restore -source "https://www.nuget.org/api/v2" ./Evos.sln
 script:
 - xbuild ./Evos.sln
-- mono ./packages/xunit.runner.console*/tools/xunit.console.exe ./Sequence.LibraryTests/bin/Debug/Sequence.LibraryTests.dll
+- mono ./Sequence.LibraryTests/bin/Debug/Sequence.LibraryTests.dll
